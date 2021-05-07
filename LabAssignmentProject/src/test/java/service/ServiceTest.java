@@ -39,20 +39,36 @@ class ServiceTest {
     void tearDown() {
     }
 
+    //tests for student entity for seminar 5
+    @org.junit.jupiter.api.Test
+    void addStudent() {
+    }
+
+    @org.junit.jupiter.api.Test
+    void deleteStudent() {
+    }
+
     @org.junit.jupiter.api.Test
     void findAllStudents() {
+    }
+
+    //tests for homework entity for seminar 5
+    @org.junit.jupiter.api.Test
+    void addHomework() {
+    }
+
+    @org.junit.jupiter.api.Test
+    void deleteHomework() {
     }
 
     @org.junit.jupiter.api.Test
     void findAllHomework() {
     }
 
-    @org.junit.jupiter.api.Test
-    void findAllGrades() {
-    }
+
 
     @org.junit.jupiter.api.Test
-    void saveStudent() {
+    void findAllGrades() {
     }
 
     @org.junit.jupiter.api.Test
@@ -67,14 +83,6 @@ class ServiceTest {
 
     @org.junit.jupiter.api.Test
     void saveGrade() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void deleteStudent() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void deleteHomework() {
     }
 
     @org.junit.jupiter.api.Test
