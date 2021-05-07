@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4655333-8af9-4c77-ab80-3f36d85e6663" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homework.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.xml" beforeDir="false" afterPath="$PROJECT_DIR$/students.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/ServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,8 +134,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceTest.findAllStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabAssignmentTracking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
+      <option name="METHOD_NAME" value="findAllStudents" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceTest.findAllStudents" />
         <item itemvalue="JUnit.ServiceTest.addStudent" />
         <item itemvalue="JUnit.ServiceTest.deleteStudent" />
         <item itemvalue="JUnit.ServiceTest.deleteHomework" />

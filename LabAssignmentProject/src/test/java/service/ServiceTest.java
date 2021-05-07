@@ -58,6 +58,13 @@ class ServiceTest {
 
     @org.junit.jupiter.api.Test
     void findAllStudents() {
+        Student student = new Student("23","Mike",123);
+        Iterable<Student> students = service.findAllStudents();
+        long firstSize = students.spliterator().getExactSizeIfKnown();
+        service.saveStudent(student.getID(),student.getName(), student.getGroup());
+        long secondSize = students.spliterator().getExactSizeIfKnown();
+        service.deleteStudent(student.getID());
+        assertEquals(secondSize,firstSize+1);
     }
 
     //tests for homework entity for seminar 5
@@ -79,27 +86,12 @@ class ServiceTest {
 
     @org.junit.jupiter.api.Test
     void findAllHomework() {
+        Homework hw = new Homework("6", "some easy homework", 10, 8);
+        Iterable<Homework> homeworks = service.findAllHomework();
+        long firstSize = homeworks.spliterator().getExactSizeIfKnown();
+        service.saveHomework(hw.getID(), hw.getDescription(), hw.getDeadline(), hw.getStartline());
+        long secondSize = homeworks.spliterator().getExactSizeIfKnown();
+        service.deleteHomework(hw.getID());
+        assertEquals(firstSize+1,secondSize);
     }
-
-    @Test
-    void assertAllTest(){
-        Student s = new Student("99", "Johan", 533);
-        assertAll(
-                "student",
-                () -> assertEquals("99", s.getID()),
-                () -> assertEquals("Johan", s.getName())
-        );
-    }
-
-    @ParameterizedTest
-    @ValueSource(ints = {-10, 55, 533})
-    void testStudentAddByGroup(int group){
-        assumeTrue(group >= 0);
-        Student s = new Student("99", "Johan", group);
-        int result = service.saveStudent(s.getID(), s.getName(), s.getGroup());
-        assertEquals(1, result);
-        service.deleteStudent(s.getID());
-    }
-
-
 }
