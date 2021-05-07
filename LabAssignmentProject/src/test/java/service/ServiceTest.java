@@ -3,7 +3,6 @@ package service;
 import domain.Grade;
 import domain.Homework;
 import domain.Student;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -15,8 +14,9 @@ import validation.HomeworkValidator;
 import validation.StudentValidator;
 import validation.Validator;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assumptions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 class ServiceTest {
 
@@ -40,12 +40,20 @@ class ServiceTest {
     }
 
     //tests for student entity for seminar 5
-    @org.junit.jupiter.api.Test
+    @Test
     void addStudent() {
+        Student student = new Student("4", "Mike", 116);
+        int result = service.saveStudent(student.getID(), student.getName(), student.getGroup());
+        service.deleteStudent(student.getID());
+        assertEquals(1, result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void deleteStudent() {
+        Student student = new Student("25", "Mikel", 266);
+        System.out.println(service.saveStudent(student.getID(), student.getName(), student.getGroup()));
+        int result = service.deleteStudent(student.getID());
+        assertEquals(1, result);
     }
 
     @org.junit.jupiter.api.Test
@@ -53,52 +61,24 @@ class ServiceTest {
     }
 
     //tests for homework entity for seminar 5
-    @org.junit.jupiter.api.Test
+    @Test
     void addHomework() {
+        Homework hw = new Homework("6", "some easy homework", 10, 8);
+        int result = service.saveHomework(hw.getID(), hw.getDescription(), hw.getDeadline(), hw.getStartline());
+        service.deleteHomework(hw.getID());
+        assertEquals(1, result);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void deleteHomework() {
+        Homework hw = new Homework("7", "some easy homework", 10, 8);
+        service.saveHomework(hw.getID(), hw.getDescription(), hw.getDeadline(), hw.getStartline());
+        int result = service.deleteHomework(hw.getID());
+        assertEquals(1, result);
     }
 
     @org.junit.jupiter.api.Test
     void findAllHomework() {
-    }
-
-
-
-    @org.junit.jupiter.api.Test
-    void findAllGrades() {
-    }
-
-    @org.junit.jupiter.api.Test
-    @DisplayName("checking if homework save works")
-    void saveValidHomework() {
-        Homework hw = new Homework("77", "some easy homework", 6, 2);
-        int result = service.saveHomework(hw.getID(), hw.getDescription(), hw.getDeadline(), hw.getStartline());
-        assertEquals(0, result);
-        //assertTrue(result == 1);
-        service.deleteHomework(hw.getID());
-    }
-
-    @org.junit.jupiter.api.Test
-    void saveGrade() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void updateStudent() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void updateHomework() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void extendDeadline() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void createStudentFile() {
     }
 
     @Test

@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4655333-8af9-4c77-ab80-3f36d85e6663" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homework.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/students.xml" beforeDir="false" afterPath="$PROJECT_DIR$/students.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/console/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/console/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractCRUDRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractCRUDRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/GradeFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GradeFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/GradeXMLRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GradeXMLRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/HomeworkFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/HomeworkFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/validation/StudentValidatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/validation/StudentValidatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/ServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,23 +48,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="validation" />
       <recent name="service" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="LabAssignmentTracking" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServiceTest">
+    <configuration name="ServiceTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="LabAssignmentTracking" />
       <extension name="coverage">
         <pattern>
@@ -91,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.assertAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.addHomework" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignmentTracking" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +82,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
-      <option name="METHOD_NAME" value="assertAllTest" />
+      <option name="METHOD_NAME" value="addHomework" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.testStudentAddByGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.addStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignmentTracking" />
       <extension name="coverage">
         <pattern>
@@ -117,23 +98,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
-      <option name="METHOD_NAME" value="testStudentAddByGroup(int)" />
+      <option name="METHOD_NAME" value="addStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentValidatorTest.testGeneralException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.deleteHomework" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabAssignmentTracking" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="validation.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="validation" />
-      <option name="MAIN_CLASS_NAME" value="validation.StudentValidatorTest" />
-      <option name="METHOD_NAME" value="testGeneralException" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
+      <option name="METHOD_NAME" value="deleteHomework" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.deleteStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabAssignmentTracking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ServiceTest" />
+      <option name="METHOD_NAME" value="deleteStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ServiceTest" />
-        <item itemvalue="JUnit.StudentValidatorTest.testGeneralException" />
-        <item itemvalue="JUnit.ServiceTest.testStudentAddByGroup" />
-        <item itemvalue="JUnit.ServiceTest.assertAllTest" />
+        <item itemvalue="JUnit.ServiceTest.addStudent" />
+        <item itemvalue="JUnit.ServiceTest.deleteStudent" />
+        <item itemvalue="JUnit.ServiceTest.deleteHomework" />
+        <item itemvalue="JUnit.ServiceTest.addHomework" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +176,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/service/ServiceTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabAssignmentProject$ServiceTest.ic" NAME="ServiceTest Coverage Results" MODIFIED="1614677012533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
