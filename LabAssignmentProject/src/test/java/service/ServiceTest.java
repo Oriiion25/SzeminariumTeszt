@@ -4,8 +4,6 @@ import domain.Grade;
 import domain.Homework;
 import domain.Student;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 import repository.GradeXMLRepository;
 import repository.HomeworkXMLRepository;
 import repository.StudentXMLRepository;
@@ -14,9 +12,7 @@ import validation.HomeworkValidator;
 import validation.StudentValidator;
 import validation.Validator;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 class ServiceTest {
 
