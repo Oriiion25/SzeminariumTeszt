@@ -90,4 +90,16 @@ class ServiceTest {
         service.deleteHomework(hw.getID());
         assertEquals(firstSize+1,secondSize);
     }
+
+    //szeminarium 6 teszt
+    @Test
+    void extendValid(){
+
+    }
+
+    @Test
+    void extendInvalid(){
+        
+    }
+
 }
