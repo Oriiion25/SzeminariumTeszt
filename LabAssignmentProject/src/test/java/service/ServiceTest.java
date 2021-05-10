@@ -94,9 +94,9 @@ class ServiceTest {
     //szeminarium 6 teszt
     @Test
     void extendValid(){
-        Homework hw = new Homework("6","to do",12,10);
+        Homework hw = new Homework("6","to do",13,10);
         service.saveHomework(hw.getID(), hw.getDescription(), hw.getDeadline(), hw.getStartline());
-        int result = service.extendDeadline(hw.getID(), 2);
+        int result = service.extendDeadline(hw.getID(), 1);
         service.deleteHomework(hw.getID());
         assertEquals(1,result);
     }
@@ -105,7 +105,7 @@ class ServiceTest {
     void extendInvalid(){
         Homework hw = new Homework("6","to do",14,10);
         service.saveHomework(hw.getID(), hw.getDescription(), hw.getDeadline(), hw.getStartline());
-        int result = service.extendDeadline(hw.getID(), 2);
+        int result = service.extendDeadline(hw.getID(), 1);
         service.deleteHomework(hw.getID());
         assertEquals(1,result);
     }
